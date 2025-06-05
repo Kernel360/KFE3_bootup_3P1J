@@ -8,8 +8,6 @@ export default function Home() {
   return (
     <div>
       메인홈입니다.
-      {/* 예시 */}
-      <CustomButton label="경매 등록" size="lg" onClick={handletest} />
     </div>
   );
 }
