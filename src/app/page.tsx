@@ -5,9 +5,5 @@ export default function Home() {
     console.log('작동중');
   };
 
-  return (
-    <div>
-      메인홈입니다.
-    </div>
-  );
+  return <div>메인홈입니다.</div>;
 }
