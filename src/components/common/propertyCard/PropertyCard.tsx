@@ -80,7 +80,7 @@ export function PropertyCard({
           </CardHeader>
           <CardContent>
             <PropertyCardPrice title="현재가" price={currentPrice} classname="mr-4" />
-            <PropertyCardPrice title="내 입찰가" price={500000000000} />
+            <PropertyCardPrice title="내 입찰가" price={myBid!} />
             <PropertyCardInfo
               date={date}
               location={location}
