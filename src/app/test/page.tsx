@@ -1,12 +1,20 @@
 'use client';
 
+import { CustomButton } from '@/components/common/CustomButton';
 import { CustomSelect } from '@/components/common/CustomSelect';
+import { IconButton } from '@/components/common/IconButton';
 import { useState } from 'react';
 
 export default function Page() {
   const [selectedPrefix, setSelectedPrefix] = useState('');
   const [selectedFruitMd, setSelectedFruitMd] = useState('');
   const [selectedFruitLg, setSelectedFruitLg] = useState('');
+
+  const [isBookmarked, setIsBookmarked] = useState(false);
+
+  const handletest = () => {
+    console.log('작동중');
+  };
 
   return (
     <div className="space-y-4 p-4">
@@ -57,6 +65,180 @@ export default function Page() {
       />
       <div className="text-sm text-gray-500">
         현재 선택된 과일 (lg): <span className="font-medium">{selectedFruitLg}</span>
+      </div>
+
+      <div>
+        테스트페이지입니다.
+        <br />
+        {/* 예시 */}
+        <h1>Solid</h1>
+        <p>
+          <CustomButton label="Rest" inValid={true} onClick={handletest} />
+        </p>
+        <p>
+          <CustomButton label="Rest" bgColor="success" onClick={handletest} />
+        </p>
+        <p>
+          <CustomButton label="Rest" bgColor="danger" onClick={handletest} />
+        </p>
+        <p>
+          <CustomButton label="Rest" bgColor="info" onClick={handletest} />
+        </p>
+        <p>
+          <CustomButton label="Rest" bgColor="white" onClick={handletest} />
+        </p>
+        <p>
+          <CustomButton label="Get started" size="me" onClick={handletest} />
+        </p>
+        <p>
+          <CustomButton label="Get started" size="me" bgColor="success" onClick={handletest} />
+        </p>
+        <p>
+          <CustomButton label="Get started" size="me" bgColor="danger" onClick={handletest} />
+        </p>
+        <p>
+          <CustomButton label="Get started" size="me" bgColor="info" onClick={handletest} />
+        </p>
+        <p>
+          <CustomButton label="Get started" size="me" bgColor="white" onClick={handletest} />
+        </p>
+        <p>
+          <CustomButton label="Get started" size="lg" onClick={handletest} />
+        </p>
+        <p>
+          <CustomButton label="Get started" size="lg" bgColor="success" onClick={handletest} />
+        </p>
+        <p>
+          <CustomButton label="Get started" size="lg" bgColor="danger" onClick={handletest} />
+        </p>
+        <p>
+          <CustomButton label="Get started" size="lg" bgColor="info" onClick={handletest} />
+        </p>
+        <p>
+          <CustomButton label="Get started" size="lg" bgColor="white" onClick={handletest} />
+        </p>
+        <h1>Outline</h1>
+        <p>
+          <CustomButton label="Rest" variant="outline" onClick={handletest} />
+        </p>
+        <p>
+          <CustomButton
+            label="Rest"
+            variant="outline"
+            outlineColor="success"
+            onClick={handletest}
+          />
+        </p>
+        <p>
+          <CustomButton label="Rest" variant="outline" outlineColor="danger" onClick={handletest} />
+        </p>
+        <p>
+          <CustomButton label="Rest" variant="outline" outlineColor="info" onClick={handletest} />
+        </p>
+        <p>
+          <CustomButton label="Rest" variant="outline" outlineColor="white" onClick={handletest} />
+        </p>
+        <p>
+          <CustomButton label="Get started" variant="outline" size="me" onClick={handletest} />
+        </p>
+        <p>
+          <CustomButton
+            label="Get started"
+            variant="outline"
+            size="me"
+            outlineColor="success"
+            onClick={handletest}
+          />
+        </p>
+        <p>
+          <CustomButton
+            label="Get started"
+            variant="outline"
+            size="me"
+            outlineColor="danger"
+            onClick={handletest}
+          />
+        </p>
+        <p>
+          <CustomButton
+            label="Get started"
+            variant="outline"
+            size="me"
+            outlineColor="info"
+            onClick={handletest}
+          />
+        </p>
+        <p>
+          <CustomButton label="Get started" variant="outline" size="lg" onClick={handletest} />
+        </p>
+        <p>
+          <CustomButton
+            label="Get started"
+            variant="outline"
+            size="lg"
+            outlineColor="success"
+            onClick={handletest}
+          />
+        </p>
+        <p>
+          <CustomButton
+            label="Get started"
+            variant="outline"
+            size="lg"
+            outlineColor="danger"
+            onClick={handletest}
+          />
+        </p>
+        <p>
+          <CustomButton
+            label="Get started"
+            variant="outline"
+            size="lg"
+            outlineColor="info"
+            onClick={handletest}
+          />
+        </p>
+        <div className="space-x-4 p-4">
+          {/* Solid - Alarm (gray bg) */}
+          <IconButton icon="alarm" variant="solid" color="neutral" size="md" bgColor="gray" />
+          <IconButton icon="alarm" variant="solid" color="neutral" size="sm" bgColor="gray" />
+
+          {/* Solid - Back (white bg) */}
+          <IconButton icon="back" variant="solid" color="neutral" size="md" bgColor="white" />
+          <IconButton icon="back" variant="solid" color="neutral" size="sm" bgColor="white" />
+
+          {/* Solid - Bookmark (gray bg, 저장 상태) */}
+          <IconButton
+            icon="bookmark"
+            variant="solid"
+            color="neutral"
+            size="md"
+            bgColor="gray"
+            state={true}
+          />
+
+          {/* Solid - Bookmark (white bg, 저장 안됨) */}
+          <IconButton
+            icon="bookmark"
+            variant="solid"
+            color="neutral"
+            size="sm"
+            bgColor="white"
+            state={false}
+          />
+          {/* Outlined - Bookmark */}
+          <IconButton
+            icon="bookmark"
+            variant="outlined"
+            color="primary"
+            size="md"
+            state={isBookmarked}
+            onClick={() => setIsBookmarked((prev) => !prev)}
+          />
+
+          <IconButton icon="bookmark" variant="outlined" color="white" size="md" />
+          <IconButton icon="bookmark" variant="outlined" color="white" size="sm" />
+        </div>
       </div>
     </div>
   );

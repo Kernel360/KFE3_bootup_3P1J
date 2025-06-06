@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, buttonVariants } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
 
 // CustomButton 컴포넌트에 사용할 props 타입 정의
 interface CustomButtonProps extends React.ComponentProps<typeof Button> {
@@ -17,15 +18,12 @@ export function CustomButton({
 }: CustomButtonProps) {
   return (
     <Button
-      className={buttonVariants({
-        ...props,
-        inValid,
-        className, // 추가 스타일도 적용 가능
-      })}
+      variant="default"
       disabled={inValid}
+      inValid={inValid}
+      className={cn(buttonVariants({ ...props, inValid }), className)}
       {...props}
     >
-      {/* children이 존재하면 children 렌더링, 없으면 label 사용 */}
       {children ?? label}
     </Button>
   );
