@@ -127,8 +127,7 @@ export const AllVariants: Story = {
       <div>
         <h3 className="text-lg font-semibold mb-4">Horizontal Cards</h3>
         <div className="space-y-4">
-          <PropertyCard {...defaultArgs} direction="horizontal" size="medium" />
-          <PropertyCard {...defaultArgs} direction="horizontal" size="large" />
+          <PropertyCard {...defaultArgs} direction="horizontal" />
         </div>
       </div>
     </div>
