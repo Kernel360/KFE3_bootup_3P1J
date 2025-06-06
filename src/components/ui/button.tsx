@@ -33,15 +33,17 @@ const buttonVariants = cva(
         danger:
           'bg-[#F03F94] active:bg-[rgba(240,63,148,0.1)] active:border active:border-[#F03F94] active:text-[#F03F94]',
         info: 'bg-[#7251F8] active:bg-[rgba(114,81,248,0.1)] active:border active:border-[#7251F8] active:text-[#7251F8]',
+        white: 'bg-[#FFFFFF] text-[#656565]'
       },
       outlineColor: {
         default: 'border border-[#EE8E1F] text-[#EE8E1F] active:bg-[rgba(238,142,31,0.1)]',
         success: 'border border-[#64B799] text-[#64B799] active:bg-[rgba(100,183,153,0.1)]',
         danger: 'border border-[#F03F94] text-[#F03F94] active:bg-[rgba(240,63,148,0.1)]',
         info: 'border border-[#7251F8] text-[#7251F8] active:bg-[rgba(114,81,248,0.1)]',
+        white: 'border border-[#D2D2D2] text-[#656565]'
       },
       inValid: {
-        true: 'opacity-50 cursor-not-allowed',
+        true: 'bg-[#D2D2D2] text-[#1F1F1F] cursor-not-allowed opacity-100',
         false: '',
       },
     },

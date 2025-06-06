@@ -64,7 +64,7 @@ const SelectContent = ({
     <SelectPrimitive.Content
       className={cn(
         // Trigger와 너비 일치시키기 위한 스타일 추가
-        'z-50 rounded-md border bg-white shadow-md overflow-hidden text-sm min-w-[var(--radix-select-trigger-width)] w-[var(--radix-select-trigger-width)]',
+        'z-50 rounded-[30px] border bg-white shadow-md overflow-hidden text-sm min-w-[var(--radix-select-trigger-width)] w-[var(--radix-select-trigger-width)]',
         className,
       )}
       position="popper" // Trigger 아래에 위치하도록 설정
