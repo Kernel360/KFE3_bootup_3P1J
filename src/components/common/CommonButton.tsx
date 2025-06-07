@@ -7,21 +7,32 @@ interface CommonButtonProps extends React.ComponentProps<typeof Button> {
   // Button의 모든 props 상속
   label?: string; // children 대신 사용할 수 있는 label 문자열
   inValid?: boolean;
+  color?: 'primary' | 'success' | 'danger' | 'info' | 'white';
 }
 
 export function CommonButton({
   label,
   children,
   inValid = false,
+  color = 'primary',
   className,
+  variant = 'default',
   ...props
 }: CommonButtonProps) {
   return (
     <Button
-      variant="default"
+      variant={variant}
       disabled={inValid}
       inValid={inValid}
-      className={cn(buttonVariants({ ...props, inValid }), className)}
+      className={cn(
+        buttonVariants({
+          variant,
+          ...props,
+          inValid,
+          ...(variant === 'outline' ? { outlineColor: color } : { bgColor: color }),
+        }),
+        className,
+      )}
       {...props}
     >
       {children ?? label}

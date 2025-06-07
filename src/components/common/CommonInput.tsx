@@ -147,7 +147,7 @@ const CommonInput = React.forwardRef<HTMLInputElement, CommonInputProps>(
         case 'error':
           return { color: 'var(--color-danger-500)' };
         case 'active':
-          return { color: 'var(--color-primary-500)' };
+          return { color: 'var(--color-primary-60)' };
         default:
           return { color: 'var(--color-neutral-60)' };
       }

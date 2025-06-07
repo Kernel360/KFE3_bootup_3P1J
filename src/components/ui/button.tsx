@@ -10,37 +10,35 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: 'text-white font-semibold text-[white] leading-[22px] text-center rounded-[99px]',
+        default: 'text-white font-semibold text-[white] leading-[22px] text-center rounded-[99px]', // solid
+        solid: 'text-white font-semibold text-[white] leading-[22px] text-center rounded-[99px]',
         outline: 'font-semibold leading-[22px] rounded-[99px] justify-center items-center gap-2',
-        // 예제들
-        //  destructive:
-        //  'bg-destructive text-white shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60',
-        // secondary: 'bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80',
-        // ghost: 'hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50',
-        // link: 'text-primary underline-offset-4 hover:underline',
       },
       size: {
-        // small
-        default: 'w-[82px] h-[46px] px-[24px] py-[12px] gap-2',
+        default: 'w-[82px] h-[46px] px-[24px] py-[12px] gap-2', // small
+        sm: 'w-[82px] h-[46px] px-[24px] py-[12px] gap-2',
         me: 'w-[220px] h-[60px] px-[16px] py-[19px] gap-2',
         lg: 'w-[327px] h-[60px] px-[16px] py-[19px] gap-2',
       },
       bgColor: {
-        default:
+        default: // primary
+          'bg-[#EE8E1F] active:bg-[rgba(238,142,31,0.1)] active:border active:border-[#EE8E1F] active:text-[#EE8E1F]',
+        primary:
           'bg-[#EE8E1F] active:bg-[rgba(238,142,31,0.1)] active:border active:border-[#EE8E1F] active:text-[#EE8E1F]',
         success:
           'bg-[#64B799] active:bg-[rgba(100,183,153,0.1)] active:border active:border-[#64B799] active:text-[#64B799]',
         danger:
           'bg-[#F03F94] active:bg-[rgba(240,63,148,0.1)] active:border active:border-[#F03F94] active:text-[#F03F94]',
         info: 'bg-[#7251F8] active:bg-[rgba(114,81,248,0.1)] active:border active:border-[#7251F8] active:text-[#7251F8]',
-        white: 'bg-[#FFFFFF] text-[#656565]'
+        white: 'bg-[#FFFFFF] text-[#656565] active:bg-[rgba(101,101,101,0.1)] active:border active:border-[#656565] active:text-[#656565]',
       },
       outlineColor: {
-        default: 'border border-[#EE8E1F] text-[#EE8E1F] active:bg-[rgba(238,142,31,0.1)]',
+        default: 'border border-[#EE8E1F] text-[#EE8E1F] active:bg-[rgba(238,142,31,0.1)]',  // primary
+        primary: 'border border-[#EE8E1F] text-[#EE8E1F] active:bg-[rgba(238,142,31,0.1)]',
         success: 'border border-[#64B799] text-[#64B799] active:bg-[rgba(100,183,153,0.1)]',
         danger: 'border border-[#F03F94] text-[#F03F94] active:bg-[rgba(240,63,148,0.1)]',
         info: 'border border-[#7251F8] text-[#7251F8] active:bg-[rgba(114,81,248,0.1)]',
-        white: 'border border-[#D2D2D2] text-[#656565]'
+        white: 'border border-[#D2D2D2] text-[#656565] active:bg-[rgba(101,101,101,0.1)] active:border active:border-[#656565] active:text-[#656565]',
       },
       inValid: {
         true: 'bg-[#D2D2D2] text-[#1F1F1F] cursor-not-allowed opacity-100',
