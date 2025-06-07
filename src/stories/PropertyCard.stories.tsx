@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { PropertyCard } from './PropertyCard';
+import { PropertyCard } from '../components/common/propertyCard/PropertyCard';
 
 const meta = {
   component: PropertyCard,
-  title: 'Component/PropertyCard',
+  title: 'Components/PropertyCard',
   tags: ['autodocs'],
   //👇 Our exports that end in "Data" are not stories.
   excludeStories: /.*Data$/,

@@ -10,7 +10,7 @@ import {
 
 type SelectSize = 'sm' | 'md' | 'lg';
 
-interface CustomSelectProps {
+interface CommonSelectProps {
   placeholder?: string;
   items: { label: string; value: string }[];
   onValueChange?: (value: string) => void;
@@ -18,13 +18,13 @@ interface CustomSelectProps {
   size?: SelectSize;
 }
 
-export const CustomSelect = ({
+export const CommonSelect = ({
   placeholder = '선택',
   items,
   onValueChange,
   defaultValue,
   size = 'md',
-}: CustomSelectProps) => {
+}: CommonSelectProps) => {
   return (
     <Select onValueChange={onValueChange} defaultValue={defaultValue}>
       {/* 트리거 버튼: 사이즈별 스타일 적용 */}

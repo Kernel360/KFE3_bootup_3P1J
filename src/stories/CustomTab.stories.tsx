@@ -1,10 +1,10 @@
+import { CommonTab } from '@/components/common/CommonTab';
 import type { Meta, StoryObj } from '@storybook/react';
-import { CustomTab } from './CustomTab';
 import { useState } from 'react';
 
-const meta: Meta<typeof CustomTab> = {
-  title: 'Components/CustomTab',
-  component: CustomTab,
+const meta: Meta<typeof CommonTab> = {
+  title: 'Components/CommonTab',
+  component: CommonTab,
   parameters: {
     layout: 'centered',
   },
@@ -65,7 +65,7 @@ export const WithEventHandler: Story = {
 
     return (
       <div className="space-y-4">
-        <CustomTab
+        <CommonTab
           items={basicTabs}
           defaultValue="menu1"
           onValueChange={(value) => {
@@ -87,17 +87,17 @@ export const AllVariations: Story = {
     <div className="space-y-8">
       <div>
         <h3 className="text-sm font-medium mb-4">2개 탭 (기본)</h3>
-        <CustomTab items={basicTabs} />
+        <CommonTab items={basicTabs} />
       </div>
 
       <div>
         <h3 className="text-sm font-medium mb-4">3개 탭</h3>
-        <CustomTab items={threeTabs} />
+        <CommonTab items={threeTabs} />
       </div>
 
       <div>
         <h3 className="text-sm font-medium mb-4">한국어 탭</h3>
-        <CustomTab items={categoryTabs} />
+        <CommonTab items={categoryTabs} />
       </div>
     </div>
   ),
@@ -107,20 +107,20 @@ export const AllVariations: Story = {
 export const HowToUse: Story = {
   render: () => (
     <div className="space-y-6 p-6 bg-gray-50 rounded-lg max-w-2xl">
-      <h2 className="text-xl font-bold">CustomTab 사용법</h2>
+      <h2 className="text-xl font-bold">CommonTab 사용법</h2>
 
       <div className="space-y-4">
         <div>
           <h3 className="text-lg font-semibold mb-2">1. Import</h3>
           <pre className="bg-black text-green-400 p-3 rounded text-sm overflow-x-auto">
-            {`import { CustomTab } from '@/components/ui/tabs';`}
+            {`import { CommonTab } from '@/components/ui/tabs';`}
           </pre>
         </div>
 
         <div>
           <h3 className="text-lg font-semibold mb-2">2. 기본 사용법</h3>
           <pre className="bg-black text-green-400 p-3 rounded text-sm overflow-x-auto">
-            {`<CustomTab 
+            {`<CommonTab 
   items={[
     { value: 'tab1', label: 'Tab 1' },
     { value: 'tab2', label: 'Tab 2' },
@@ -134,7 +134,7 @@ export const HowToUse: Story = {
           <pre className="bg-black text-green-400 p-3 rounded text-sm overflow-x-auto">
             {`const [activeTab, setActiveTab] = useState('tab1');
 
-<CustomTab 
+<CommonTab 
   items={tabItems}
   defaultValue="tab1"
   onValueChange={(value) => setActiveTab(value)}

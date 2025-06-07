@@ -10,7 +10,7 @@ import { cn } from '@/lib/utils';
 
 type InputState = 'empty' | 'filled' | 'error' | 'active';
 
-interface CustomInputProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size'> {
+interface CommonInputProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size'> {
   variant?: 'basic' | 'user' | 'search' | 'password';
   label?: string;
   state?: InputState;
@@ -18,7 +18,7 @@ interface CustomInputProps extends Omit<React.InputHTMLAttributes<HTMLInputEleme
   size?: 'small' | 'wide';
 }
 
-const CustomInput = React.forwardRef<HTMLInputElement, CustomInputProps>(
+const CommonInput = React.forwardRef<HTMLInputElement, CommonInputProps>(
   (
     {
       variant = 'basic',
@@ -292,7 +292,7 @@ const CustomInput = React.forwardRef<HTMLInputElement, CustomInputProps>(
   },
 );
 
-CustomInput.displayName = 'CustomInput';
+CommonInput.displayName = 'CommonInput';
 
-export default CustomInput;
-export type { CustomInputProps, InputState };
+export default CommonInput;
+export type { CommonInputProps, InputState };

@@ -1,10 +1,9 @@
+import { CommonSelect } from '@/components/common/CommonSelect';
 import type { Meta, StoryObj } from '@storybook/react';
-import { CustomSelect } from './CustomSelect';
-import { useState } from 'react';
 
-const meta: Meta<typeof CustomSelect> = {
-  title: 'Components/CustomSelect',
-  component: CustomSelect,
+const meta: Meta<typeof CommonSelect> = {
+  title: 'Components/CommonSelect',
+  component: CommonSelect,
   parameters: {
     layout: 'centered',
   },
@@ -56,15 +55,15 @@ export const AllSizes: Story = {
       <div className="space-y-6">
         <div>
           <h3 className="text-sm font-medium mb-2">Small (sm)</h3>
-          <CustomSelect size="sm" items={fruitItems} placeholder="과일 선택" />
+          <CommonSelect size="sm" items={fruitItems} placeholder="과일 선택" />
         </div>
         <div>
           <h3 className="text-sm font-medium mb-2">Medium (md)</h3>
-          <CustomSelect size="md" items={fruitItems} placeholder="과일 선택" />
+          <CommonSelect size="md" items={fruitItems} placeholder="과일 선택" />
         </div>
         <div>
           <h3 className="text-sm font-medium mb-2">Large (lg)</h3>
-          <CustomSelect size="lg" items={fruitItems} placeholder="과일 선택" />
+          <CommonSelect size="lg" items={fruitItems} placeholder="과일 선택" />
         </div>
       </div>
     );
@@ -75,20 +74,20 @@ export const AllSizes: Story = {
 export const HowToUse: Story = {
   render: () => (
     <div className="space-y-6 p-6 bg-gray-50 rounded-lg max-w-2xl">
-      <h2 className="text-xl font-bold">CustomSelect 사용법</h2>
+      <h2 className="text-xl font-bold">CommonSelect 사용법</h2>
 
       <div className="space-y-4">
         <div>
           <h3 className="text-lg font-semibold mb-2">1. Import</h3>
           <pre className="bg-black text-green-400 p-3 rounded text-sm overflow-x-auto">
-            {`import { CustomSelect } from '@/components/common/CustomSelect';`}
+            {`import { CommonSelect } from '@/components/common/CommonSelect';`}
           </pre>
         </div>
 
         <div>
           <h3 className="text-lg font-semibold mb-2">2. 기본 사용법</h3>
           <pre className="bg-black text-green-400 p-3 rounded text-sm overflow-x-auto">
-            {`<CustomSelect 
+            {`<CommonSelect 
   items={[
     { label: '옵션 1', value: 'option1' },
     { label: '옵션 2', value: 'option2' },
@@ -103,7 +102,7 @@ export const HowToUse: Story = {
           <pre className="bg-black text-green-400 p-3 rounded text-sm overflow-x-auto">
             {`const [selected, setSelected] = useState('');
 
-<CustomSelect 
+<CommonSelect 
   size="lg"
   defaultValue=""
   placeholder="선택하세요"

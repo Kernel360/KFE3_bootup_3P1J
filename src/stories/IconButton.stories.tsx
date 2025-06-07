@@ -1,6 +1,6 @@
 // IconButton.stories.tsx
+import { IconButton } from '@/components/common/IconButton';
 import type { Meta, StoryObj } from '@storybook/react';
-import { IconButton } from './IconButton';
 import React from 'react';
 
 const meta: Meta<typeof IconButton> = {
