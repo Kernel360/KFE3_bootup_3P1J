@@ -71,12 +71,11 @@ const CommonInput = React.forwardRef<HTMLInputElement, CommonInputProps>(
         case 'error':
           return `${baseClasses} text-danger-500 placeholder:text-danger-500`;
         case 'active':
-          return `${baseClasses} text-primary-500 placeholder:text-neutral-60`;
+          return `${baseClasses} text-primary-500 placeholder:text-primary-500`;
         default:
           return baseClasses;
       }
     };
-
     // 상태별 인라인 스타일
     const getStateStyles = (currentState: InputState): React.CSSProperties => {
       switch (currentState) {
@@ -102,7 +101,7 @@ const CommonInput = React.forwardRef<HTMLInputElement, CommonInputProps>(
           return {
             backgroundColor: 'var(--color-neutral-10)',
             borderColor: 'var(--color-primary-500)',
-            color: 'var(--color-primary-500)',
+            color: 'var(--color-neutral-60)',
           };
         default:
           return {};
@@ -147,7 +146,7 @@ const CommonInput = React.forwardRef<HTMLInputElement, CommonInputProps>(
         case 'error':
           return { color: 'var(--color-danger-500)' };
         case 'active':
-          return { color: 'var(--color-primary-60)' };
+          return { color: 'var(--color-primary-500)' };
         default:
           return { color: 'var(--color-neutral-60)' };
       }
