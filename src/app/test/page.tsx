@@ -76,46 +76,46 @@ export default function Page() {
           <CustomButton label="Rest" inValid={true} onClick={handletest} />
         </p>
         <p>
-          <CustomButton label="Rest" bgColor="success" onClick={handletest} />
+          <CustomButton label="Rest" color="success" onClick={handletest} />
         </p>
         <p>
-          <CustomButton label="Rest" bgColor="danger" onClick={handletest} />
+          <CustomButton label="Rest" color="danger" onClick={handletest} />
         </p>
         <p>
-          <CustomButton label="Rest" bgColor="info" onClick={handletest} />
+          <CustomButton label="Rest" color="info" onClick={handletest} />
         </p>
         <p>
-          <CustomButton label="Rest" bgColor="white" onClick={handletest} />
+          <CustomButton label="Rest" color="white" onClick={handletest} />
         </p>
         <p>
           <CustomButton label="Get started" size="me" onClick={handletest} />
         </p>
         <p>
-          <CustomButton label="Get started" size="me" bgColor="success" onClick={handletest} />
+          <CustomButton label="Get started" size="me" color="success" onClick={handletest} />
         </p>
         <p>
-          <CustomButton label="Get started" size="me" bgColor="danger" onClick={handletest} />
+          <CustomButton label="Get started" size="me" color="danger" onClick={handletest} />
         </p>
         <p>
-          <CustomButton label="Get started" size="me" bgColor="info" onClick={handletest} />
+          <CustomButton label="Get started" size="me" color="info" onClick={handletest} />
         </p>
         <p>
-          <CustomButton label="Get started" size="me" bgColor="white" onClick={handletest} />
+          <CustomButton label="Get started" size="me" color="white" onClick={handletest} />
         </p>
         <p>
           <CustomButton label="Get started" size="lg" onClick={handletest} />
         </p>
         <p>
-          <CustomButton label="Get started" size="lg" bgColor="success" onClick={handletest} />
+          <CustomButton label="Get started" size="lg" color="success" onClick={handletest} />
         </p>
         <p>
-          <CustomButton label="Get started" size="lg" bgColor="danger" onClick={handletest} />
+          <CustomButton label="Get started" size="lg" color="danger" onClick={handletest} />
         </p>
         <p>
-          <CustomButton label="Get started" size="lg" bgColor="info" onClick={handletest} />
+          <CustomButton label="Get started" size="lg" color="info" onClick={handletest} />
         </p>
         <p>
-          <CustomButton label="Get started" size="lg" bgColor="white" onClick={handletest} />
+          <CustomButton label="Get started" size="lg" color="white" onClick={handletest} />
         </p>
         <h1>Outline</h1>
         <p>
@@ -125,18 +125,18 @@ export default function Page() {
           <CustomButton
             label="Rest"
             variant="outline"
-            outlineColor="success"
+            color="success"
             onClick={handletest}
           />
         </p>
         <p>
-          <CustomButton label="Rest" variant="outline" outlineColor="danger" onClick={handletest} />
+          <CustomButton label="Rest" variant="outline" color="danger" onClick={handletest} />
         </p>
         <p>
-          <CustomButton label="Rest" variant="outline" outlineColor="info" onClick={handletest} />
+          <CustomButton label="Rest" variant="outline" color="info" onClick={handletest} />
         </p>
         <p>
-          <CustomButton label="Rest" variant="outline" outlineColor="white" onClick={handletest} />
+          <CustomButton label="Rest" variant="outline" color="white" onClick={handletest} />
         </p>
         <p>
           <CustomButton label="Get started" variant="outline" size="me" onClick={handletest} />
@@ -146,7 +146,7 @@ export default function Page() {
             label="Get started"
             variant="outline"
             size="me"
-            outlineColor="success"
+            color="success"
             onClick={handletest}
           />
         </p>
@@ -155,7 +155,7 @@ export default function Page() {
             label="Get started"
             variant="outline"
             size="me"
-            outlineColor="danger"
+            color="danger"
             onClick={handletest}
           />
         </p>
@@ -164,7 +164,7 @@ export default function Page() {
             label="Get started"
             variant="outline"
             size="me"
-            outlineColor="info"
+            color="info"
             onClick={handletest}
           />
         </p>
@@ -176,7 +176,7 @@ export default function Page() {
             label="Get started"
             variant="outline"
             size="lg"
-            outlineColor="success"
+            color="success"
             onClick={handletest}
           />
         </p>
@@ -185,7 +185,7 @@ export default function Page() {
             label="Get started"
             variant="outline"
             size="lg"
-            outlineColor="danger"
+            color="danger"
             onClick={handletest}
           />
         </p>
