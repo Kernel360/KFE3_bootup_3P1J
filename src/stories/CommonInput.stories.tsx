@@ -1,9 +1,9 @@
+import CommonInput from '@/components/common/CommonInput';
 import type { Meta, StoryObj } from '@storybook/react';
-import CustomInput from './CustomInput';
 
-const meta: Meta<typeof CustomInput> = {
-  title: 'Components/CustomInput',
-  component: CustomInput,
+const meta: Meta<typeof CommonInput> = {
+  title: 'Components/CommonInput',
+  component: CommonInput,
   parameters: {
     layout: 'centered',
   },
@@ -51,10 +51,10 @@ export const Default: Story = {
 export const AllVariants: Story = {
   render: () => (
     <div className="space-y-4 w-96">
-      <CustomInput variant="basic" placeholder="기본 입력" label="기본" />
-      <CustomInput variant="user" placeholder="사용자명" label="사용자" />
-      <CustomInput variant="search" placeholder="검색" label="검색" />
-      <CustomInput variant="password" placeholder="비밀번호" label="비밀번호" />
+      <CommonInput variant="basic" placeholder="기본 입력" label="기본" />
+      <CommonInput variant="user" placeholder="사용자명" label="사용자" />
+      <CommonInput variant="search" placeholder="검색" label="검색" />
+      <CommonInput variant="password" placeholder="비밀번호" label="비밀번호" />
     </div>
   ),
 };
@@ -63,10 +63,10 @@ export const AllVariants: Story = {
 export const AllStates: Story = {
   render: () => (
     <div className="space-y-4 w-96">
-      <CustomInput state="empty" placeholder="빈 상태" label="빈 상태" />
-      <CustomInput state="filled" defaultValue="채워진 상태" label="채워진 상태" />
-      <CustomInput state="active" placeholder="활성 상태" label="활성 상태" />
-      <CustomInput error placeholder="에러 상태" label="에러 상태" />
+      <CommonInput state="empty" placeholder="빈 상태" label="빈 상태" />
+      <CommonInput state="filled" defaultValue="채워진 상태" label="채워진 상태" />
+      <CommonInput state="active" placeholder="활성 상태" label="활성 상태" />
+      <CommonInput error placeholder="에러 상태" label="에러 상태" />
     </div>
   ),
 };
@@ -75,9 +75,9 @@ export const AllStates: Story = {
 export const Sizes: Story = {
   render: () => (
     <div className="space-y-4">
-      <CustomInput placeholder="기본 크기" label="기본 크기" />
-      <CustomInput size="small" placeholder="작은 크기" label="작은 크기" />
-      <CustomInput size="wide" placeholder="넓은 크기" label="넓은 크기" />
+      <CommonInput placeholder="기본 크기" label="기본 크기" />
+      <CommonInput size="small" placeholder="작은 크기" label="작은 크기" />
+      <CommonInput size="wide" placeholder="넓은 크기" label="넓은 크기" />
     </div>
   ),
 };

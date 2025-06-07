@@ -7,19 +7,19 @@ interface TabItem {
   label: string;
 }
 
-interface CustomTabProps {
+interface CommonTabProps {
   items: TabItem[];
   defaultValue?: string;
   onValueChange?: (value: string) => void;
   className?: string;
 }
 
-export const CustomTab = ({
+export const CommonTab = ({
   items,
   defaultValue,
   onValueChange,
   className = '',
-}: CustomTabProps) => {
+}: CommonTabProps) => {
   return (
     <Tabs
       defaultValue={defaultValue || items[0]?.value}
