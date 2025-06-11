@@ -1,7 +1,7 @@
 import React, { forwardRef, useState } from 'react';
 import BaseInput from './BaseInput';
 import IconInput from './IconInput';
-import { CustomInputProps } from './types';
+import { CustomInputProps } from '../types/input.types';
 import { UserIcon, SearchIcon, EyeIcon, EyeOffIcon } from './icons';
 
 const CustomInput = forwardRef<HTMLInputElement, CustomInputProps>(

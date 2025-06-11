@@ -23,7 +23,7 @@ export type {
   BaseInputProps,
   IconInputProps,
   CustomInputProps
-} from './types';
+} from '../types/input.types';
 
 // 유틸리티 익스포트
-export { cn } from './utils';
+export { cn } from '../lib/utils';

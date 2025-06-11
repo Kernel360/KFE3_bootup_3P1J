@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
-import { cn } from './utils';
-import { BaseInputProps, InputState } from './types';
+import { cn } from '../lib/utils';
+import { BaseInputProps, InputState } from '../types/input.types';
 
 const BaseInput = forwardRef<HTMLInputElement, BaseInputProps>(
   ({ 

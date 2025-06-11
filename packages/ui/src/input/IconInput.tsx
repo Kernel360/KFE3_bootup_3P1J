@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
-import { cn } from './utils';
-import { IconInputProps, InputState } from './types';
+import { cn } from '../lib/utils';
+import { IconInputProps, InputState } from '../types/input.types';
 
 const IconInput = forwardRef<HTMLInputElement, IconInputProps>(
   ({
