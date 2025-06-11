@@ -5,7 +5,8 @@
   },
   "include": [
     "src",
-    "../../apps/docs/stories/Badge.stories.tsx"
+    "../../apps/docs/stories/Badge.stories.tsx",
+    "types"
   ],
   "exclude": [
     "dist",
